@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <form>
+            <h4>Registration Form</h4>
+            <!-- Input from User -->
+            <input type="text" placeholder='Name' id="name"><br>
+            <input type="email" placeholder='Email' id="email"><br>
+            <input id='btn' type="submit" placeholder='Register' onclick="register(event)">
+        </form>
+        <!-- Output Form Details -->
+        <p>Name: <span id="display_name"></span></p>
+        <p>Email: <span id="display_email"></span></p>
+    </center>
+    <script>

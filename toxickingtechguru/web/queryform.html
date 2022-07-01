@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <heading>
+        <title>Query form</title>
+    </heading>
+    <script>
+        function myFunction()
+        {
+           var fname = document.getElementById("fullname").value;
+           var femail = document.getElementById("e-mail").value;
+           var fsubject = document.getElementById("subjectchoice").value;
+           var fdetails = document.getElementById("details").value;
+          
+
+           document.write("Name: "+fname+ "<br>" );
+           document.write("Email: "+femail+ "<br>" );
+           document.write("Subject: how much experince do you have on javascrip?"+fsubject+ "<br>" );
+           document.write("Details: "+fdetails+ "<br>" );
+          
+           let btn = document.createElement("button");
+            btn.innerHTML = "send";
+           
+            document.body.appendChild(btn);
+            btn.addEventListener("click", () =>{
+               
+  document.getElementById("fullname").value;
+               });
+            
+      
+
+           if (!fname   ){ 
+            
+           alert ("please input full name");
+           return;
+           }
+           if (!femail)
+           {
+            alert ("please input email");
+           }
+           if (!fdetails ){
+            alert ("please input all details");
+           }
+       }
+       
+       </script>
+
+    <body  id="testw">
+   
+        <h1> Make your<br>Inquiry<br>??</h1>
+        <h2>Personal Information</h2>
+       
+        <form onsubmit="myFunction()">
+            <div>
+            <label for="fullname">Name:</label>
+            <input type="'text"id="fullname"placeholder=""required>
+            </div> 
+            <div>
+                <label for="e-mail">Email:</label>
+    <input type="'text "id="e-mail"placeholder=""required>
+         </div>
+    
+     <h2>Ask a quiz</h2>
+     <div>
+            <label for="let-us know your query"><strong>Let me know about your query></strong></label>
+     </div>
+     <div>
+            <label for="comment"><strong>Detailed description of your query:</strong</label>
+    </div>
+
+    <label for="programming-experience">Programming Experience</label>
+<input type="radio"id="subjectchoice" name="nameA" value 1>
+<label for="transferables skills">Transferrable skills</label>
+<input type="radio"id ="subject_choice" name="nameA" value 3>
+<label for="other-experience">Other Experience</label>
+<input type="radio"id="Experience"name="nameA" value 2>
+            <div class="form-group">
+               <textarea class="form-control" rows="1" id="details" placeholder=" how much experince do you have on javascrip?"></textarea>
+              </div>
+              <div>
+              <label for="let-us know your query">Other</label>
+              </div>
+              <div class="form-group">
+    <textarea class="form-control" rows="10" id="comment1"></textarea>
+                </div>
+                <button onclick="myFunction()" id=test> viewing details </button>
+            <tr>
+            <th>
+                
+           
+            </th>
+            </tr>
+
+           
+            </form>
+
+            
+           
+        
+
+
+  </body>
+  </html>
